@@ -8,4 +8,28 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Title_pic">
+        <item name="android:layout_width">45.0dip</item>
+        <item name="android:layout_height">45.0dip</item>
+    </style>
+
+    <style name="Title_seperator">
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_marginTop">2.0dip</item>
+    </style>
+
+    <style name="Title_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textSize">22.0sp</item>
+    </style>
 </resources>

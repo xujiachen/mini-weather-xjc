@@ -2,8 +2,49 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="天气预报项目"/>
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/Title_style"
+        android:background="@color/colorTitle">
+
+        <ImageView
+            android:id="@+id/title_city_manager"
+            style="@style/Title_pic"
+            android:src="@drawable/title_city" />
+
+        <ImageView
+            android:id="@+id/city_seperator"
+            style="@style/Title_seperator"
+            android:layout_toRightOf="@id/title_city_manager"
+            android:background="@color/colorSeperator"/>
+
+        <TextView
+            android:id="@+id/title_city_name"
+            style="@style/Title_text"
+            android:layout_toRightOf="@id/city_seperator"
+            android:text="北京天气"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/title_update_btn"
+            style="@style/Title_pic"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:src="@drawable/title_update"/>
+
+        <ImageView
+            android:id="@+id/title_share"
+            style="@style/Title_pic"
+            android:layout_toLeftOf="@id/title_update_btn"
+            android:src="@drawable/title_share"/>
+
+        <ImageView
+            android:id="@+id/title_location"
+            style="@style/Title_pic"
+            android:layout_toLeftOf="@id/title_share"
+            android:src="@drawable/base_action_bar_action_city"/>
+
+        </RelativeLayout>
+
 </RelativeLayout>
