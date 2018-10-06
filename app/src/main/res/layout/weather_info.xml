@@ -17,34 +17,151 @@
             android:id="@+id/city_seperator"
             style="@style/Title_seperator"
             android:layout_toRightOf="@id/title_city_manager"
-            android:background="@color/colorSeperator"/>
+            android:background="@color/colorSeperator" />
 
         <TextView
             android:id="@+id/title_city_name"
             style="@style/Title_text"
             android:layout_toRightOf="@id/city_seperator"
             android:text="北京天气"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white" />
 
         <ImageView
             android:id="@+id/title_update_btn"
             style="@style/Title_pic"
             android:layout_alignParentRight="true"
             android:layout_gravity="center"
-            android:src="@drawable/title_update"/>
+            android:src="@drawable/title_update" />
 
         <ImageView
             android:id="@+id/title_share"
             style="@style/Title_pic"
             android:layout_toLeftOf="@id/title_update_btn"
-            android:src="@drawable/title_share"/>
+            android:src="@drawable/title_share" />
 
         <ImageView
             android:id="@+id/title_location"
             style="@style/Title_pic"
             android:layout_toLeftOf="@id/title_share"
-            android:src="@drawable/base_action_bar_action_city"/>
+            android:src="@drawable/base_action_bar_action_city" />
 
         </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:background="@drawable/biz_plugin_weather_shenzhen_bg"
+        android:orientation="vertical">
+        <!-- 今日天气信息 -->
+        <RelativeLayout
+            android:id="@+id/weather_today"
+            style="@style/Weather_today">
+            <!-- 城市名称 -->
+            <TextView
+                android:id="@+id/city"
+                style="@style/Basic_info"
+                android:layout_alignParentTop="true"
+                android:text="北京"
+                android:textSize="40.0sp" />
+            <!-- 发布时间 -->
+            <TextView
+                android:id="@+id/time"
+                style="@style/Basic_info"
+                android:layout_below="@id/city"
+                android:layout_marginTop="5dip"
+                android:text="今天18:25发布"
+                android:textSize="15.0sp" />
+            <!-- 湿度信息 -->
+            <TextView
+                android:id="@+id/humidity"
+                style="@style/Basic_info"
+                android:layout_below="@id/time"
+                android:text="湿度：57%"
+                android:textSize="15.0sp" />
+            <!-- PM2.5整体信息块 -->
+            <LinearLayout
+                android:id="@+id/pm2_5_content"
+                style="@style/Pm2_5_content">
+                <!-- PM2.5详情 -->
+                <LinearLayout
+                    style="@style/Pm2_5_layout">
+                    <!-- PM2.5文字详情 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!-- PM2.5 -->
+                        <TextView
+                            android:id="@+id/pm2_5"
+                            style="@style/Pm2_5_info"
+                            android:text="PM2.5"
+                            android:textSize="12.0sp" />
+                        <!-- PM2.5数值 -->
+                        <TextView
+                            android:id="@+id/pm_data"
+                            style="@style/Pm2_5_info"
+                            android:text="220"
+                            android:textSize="30.0sp" />
+                        
+                    </LinearLayout>
+                    <!-- PM2.5图片 -->
+                    <ImageView
+                        android:id="@+id/pm2_5_img"
+                        style="@style/Pm2_5_img"
+                        android:src="@drawable/biz_plugin_weather_0_50" />
+                </LinearLayout>
+
+                <!-- 污染等级 -->
+                <TextView
+                    android:id="@+id/pm2_5_quality"
+                    style="@style/Pm2_5_quality"
+                    android:text="重度污染" />
+
+            </LinearLayout>
+            <!-- 今日天气信息块 -->
+            <RelativeLayout
+                style="@style/Weather_today_layout"
+                android:layout_below="@id/humidity" >
+                <!-- 天气情况图片示例 -->
+                <ImageView
+                    android:id="@+id/weather_img"
+                    style="@style/Weather_today_img"
+                    android:src="@drawable/biz_plugin_weather_qing" />
+                <!-- 今日星期 -->
+                <TextView
+                    android:id="@+id/week_today"
+                    style="@style/Weather_today_info"
+                    android:layout_alignParentTop="true"
+                    android:text="今天 星期三"
+                    android:textSize="20.0sp" />
+                <!-- 温度范围 -->
+                <TextView
+                    android:id="@+id/temperature"
+                    style="@style/Weather_today_info"
+                    android:layout_below="@id/week_today"
+                    android:text="-2℃~7℃"
+                    android:textSize="30.0sp" />
+                <!-- 天气状况 -->
+                <TextView
+                    android:id="@+id/climate"
+                    style="@style/Weather_today_info"
+                    android:layout_below="@id/temperature"
+                    android:text="多云转晴"
+                    android:textSize="20.0sp" />
+                <!-- 风力信息 -->
+                <TextView
+                    android:id="@+id/wind"
+                    style="@style/Weather_today_info"
+                    android:layout_below="@id/climate"
+                    android:text="微风"
+                    android:textSize="20.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 七日天气信息 -->
+
+        <!-- 广告等信息 -->
+    </LinearLayout>
 
 </RelativeLayout>
