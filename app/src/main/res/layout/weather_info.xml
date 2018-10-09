@@ -79,6 +79,13 @@
                 android:layout_below="@id/time"
                 android:text="湿度：57%"
                 android:textSize="15.0sp" />
+            <!-- 当前温度 -->
+            <TextView
+                android:id="@+id/temperature_now"
+                style="@style/Basic_info"
+                android:layout_below="@id/humidity"
+                android:text="当前温度：5℃"
+                android:textSize="15.0sp"/>
             <!-- PM2.5整体信息块 -->
             <LinearLayout
                 android:id="@+id/pm2_5_content"
