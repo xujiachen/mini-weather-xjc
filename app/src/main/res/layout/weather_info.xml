@@ -129,7 +129,7 @@
             <!-- 今日天气信息块 -->
             <RelativeLayout
                 style="@style/Weather_today_layout"
-                android:layout_below="@id/humidity" >
+                android:layout_below="@id/temperature_now" >
                 <!-- 天气情况图片示例 -->
                 <ImageView
                     android:id="@+id/weather_img"
