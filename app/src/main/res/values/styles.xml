@@ -113,4 +113,22 @@
         <item name="android:singleLine">true</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
+
+    <!-- 选择城市工具栏标题 -->
+    <style name="Select_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20.0sp</item>
+        <!-- <item name="android:textSize">20.0dip</item> -->
+    </style>
+    <!-- 选择城市工具栏分割线 -->
+    <style name="Select_seperator">
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>
