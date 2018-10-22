@@ -77,6 +77,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View view) {
         if (view.getId() == R.id.title_city_manager) {
             Intent i = new Intent(this, SelectCity.class);
+            i.putExtra("City", cityTv.getText());
             //startActivity(i);
             startActivityForResult(i, 1);
         }

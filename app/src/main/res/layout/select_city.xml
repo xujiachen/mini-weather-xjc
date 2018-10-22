@@ -4,6 +4,7 @@
     android:layout_height="match_parent">
     <!-- 标题栏 -->
     <RelativeLayout
+        android:id="@+id/title_top"
         style="@style/Title_style"
         android:background="@color/colorTitle">
         <TextView
@@ -21,6 +22,21 @@
             style="@style/Select_seperator"
             android:layout_toRightOf="@id/title_back"
             android:background="@color/colorSeperator" />
-        
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_top">
+
+        <!-- 城市列表 -->
+        <ListView
+            android:id="@+id/title_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+        </ListView>
+
+    </RelativeLayout>
+
 </RelativeLayout>
