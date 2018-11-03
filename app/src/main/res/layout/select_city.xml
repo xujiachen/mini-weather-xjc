@@ -23,11 +23,17 @@
             android:layout_toRightOf="@id/title_back"
             android:background="@color/colorSeperator" />
     </RelativeLayout>
+    <com.example.xu.view.ClearEditText
+        android:id="@+id/search_city"
+        style="@style/Search_city"
+        android:textColor="#ff000000"
+        android:textColorHint="#ffcccccc"
+        android:layout_below="@id/title_top"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/title_top">
+        android:layout_below="@id/search_city">
 
         <!-- 城市列表 -->
         <ListView

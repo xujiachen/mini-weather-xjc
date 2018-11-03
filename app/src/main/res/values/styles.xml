@@ -131,4 +131,17 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <!-- 搜索框 -->
+    <style name="Search_city">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4.0dip</item>
+        <item name="android:hint">搜索全国城市（中文）</item>
+        <item name="android:drawableLeft">@drawable/magnifying_glass</item>
+        <item name="android:drawablePadding">6.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/contact_search_box_edittext_keyword_background</item>
+        <item name="android:textSize">15.0sp</item>
+    </style>
+
 </resources>
