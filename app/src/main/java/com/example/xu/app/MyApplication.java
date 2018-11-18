@@ -56,7 +56,7 @@ public class MyApplication extends Application {          //  一般处理全局
             i++;
             String cityName = city.getCity();
             String cityCode = city.getNumber();
-            Log.d(TAG, cityCode + ":" + cityName);
+            //Log.d(TAG, cityCode + ":" + cityName);
         }
         Log.d(TAG, "i=" + i);
         return true;
